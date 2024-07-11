@@ -1,0 +1,152 @@
+#coverimage{
+    display: none;
+    position: fixed;
+    z-index: -1;
+    /* max-height: 60svh; */
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.7;
+}
+#coverimage video{
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+.content{
+    color: whitesmoke;
+    /* margin-top: 20svh; */
+    margin-top:40svh;
+    /* position: absolute; */
+    /* color: white; */
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.content p{
+    word-spacing: 0.4rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 20px;
+    font-size: 25px;
+
+}
+
+
+.content h1{
+    font-size: 50px;
+}
+.content .banner{
+    padding: 0px 7svw;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 60px;
+}
+
+.banner .flexcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 50svw;
+    gap: 20px;
+}
+
+#headingservice{
+    margin-top: -10svh;
+    font-size: 60px;
+    text-align: center;
+}
+
+.content img:not(#contactPageSubmitBtnImg){
+    width: 30svw;
+    border-radius: 1rem;
+    scale: 1;
+    transition: scale 0.5s;
+}
+
+
+.content img:hover{
+    scale: 1.05;
+}
+.pagebreak{
+    content: '';
+    border: 3px solid #565656;
+    width: 110%;
+    margin: 2rem 0px;
+}
+
+
+
+#actualbody{
+    padding-bottom: 7rem;
+}
+#background{
+    position: fixed; 
+    z-index: -10; 
+    top: -5px;
+    width: 100svw;
+    overflow-x: hidden;
+}
+
+#background img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .first{
+        margin-top: 7rem;
+    }
+    .even{
+        flex-direction: column-reverse !important;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner .flexcontainer{
+        
+        width: 90svw !important;
+    }
+    .content img:not(#contactPageSubmitBtnImg){
+        width: 87svw !important;
+    }
+    #background{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+    }
+    #background img{
+        transform: scaleX(-1);
+        width: auto;
+        height: 50svh;
+    }
+    .pagebreak{
+        content: '';
+        border: 3px solid #565656;
+        width: 100svw !important;
+        margin: -3rem 0px;
+    }
+    #headingservice{
+        position: absolute;
+        right: 5svw;
+        margin-top: -20svh;
+        font-size: 40px;
+        width: 50svw;
+        text-align: right;
+    }
+
+    .content h1{
+        font-size: 23px;
+    }
+    .content p{
+        font-size: 1rem;
+    }
+}

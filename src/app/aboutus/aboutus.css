@@ -1,0 +1,150 @@
+
+input{
+    background-color:black;
+    color: white;
+    width: 340px;
+    padding: 5px 0px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    height: 2.7rem;
+    border-radius: 1.3rem;
+    text-transform: none;
+}
+
+.bgcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    background-image: url(../../../public/assets/servicebg.jpg);
+    /* object-fit: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top left ;
+ } 
+
+ .bgcontainer h1{
+    font-size: 5rem;
+ }
+/* .aboutus{
+    color:black;
+    font-size:120px;
+    font-weight: bolder;
+    position: absolute;
+    right:500px;
+    top:250px;
+    transform: rotate(-10deg);
+    display:flex;
+    gap:25px;
+}
+.us{
+    color:white;
+} */
+.whatareweheading{
+    color:rgb(208, 4, 4);
+    margin:60px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+.whatarewe{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+    color:white;
+    margin:70px auto;
+    height:40vh;
+    width:80vw;
+}
+.whatareweimg{
+    width:50%;
+    height:40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatarewetext{
+    width:50%;
+    height:40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.whatareweimg img{
+    width:30vw;
+    height:40vh;
+    border-radius:10%;
+}
+
+.why{
+    margin-top:8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5vh;
+
+}
+.text{
+    color:rgb(208,4,4);
+    font-size: 30px;
+}
+
+.grid{
+    width:70vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap:5vw; */
+    justify-items: center;
+    align-items: center;
+}
+.gridbox{
+    color:white;
+    width:22vw;
+    height:30vh;
+    border-radius: 10%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color:black;
+    transition:background-color 0.7s ease-out;
+}
+.gridbox:hover{
+    background-color: rgb(208,4,4);
+}
+
+h1{
+    color: whitesmoke;
+}
+.gridtext{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    width:80%;
+    word-break: break-all;
+}
+
+.gridbox:hover > .gridimg{
+    transform:rotate(360deg);
+}
+.gridimg{
+ 
+    transform:rotate(0deg);
+    transition :transform 0.5s ease-in-out;
+}
+
+.gridimg img{
+    filter: invert(1); 
+    height: 50px;
+}
+
+.gridtext{
+    text-align: center;
+}
