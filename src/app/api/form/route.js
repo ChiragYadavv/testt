@@ -1,13 +1,4 @@
 
-import { createProxyMiddleware } from 'next-http-proxy-middleware';
-
-export const corsMiddleware = createProxyMiddleware({
-  target: '',
-  changeOrigin: true,
-  onProxyRes: (proxyRes) => {
-    proxyRes.headers['Access-Control-Allow-Origin'] = '*'; // Adjust as needed
-  },
-});
 
 import clientPromise from '../mongodb';
 import { NextResponse } from 'next/server';
