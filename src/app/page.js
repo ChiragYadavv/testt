@@ -5,8 +5,9 @@ export default function Home() {
   async function hadle(){
     const res =  await fetch("/api/add",{method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({data:"Test Data"})})
 
-    return await res.json();
+    console.log(await res.json());
   }
+  
   return (
     <main className={styles.main}>
         <button onClick={hadle}>Bultt</button>
