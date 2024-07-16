@@ -2,9 +2,7 @@
 
 import clientPromise from '../mongodb';
 import { NextResponse } from 'next/server';
-import cors from '../middleware/cors';
 export async function POST(request) {
-    await cors(req, res);
     const { name, email, mobile, message } = await request.json();
     try {
         const client = await clientPromise;
