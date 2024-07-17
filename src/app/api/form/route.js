@@ -1,13 +1,6 @@
 import clientPromise from '../mongodb';
 import { NextResponse } from 'next/server';
-import NextCors from 'nextjs-cors';
 export async function POST(request) {
-    // const response = NextResponse.next();
-    // await NextCors(request, response, {
-    //     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    //     origin: '*',
-    //     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    // });
     const { name, email, mobile, message } = await request.json();
     try {
         const client = await clientPromise;
