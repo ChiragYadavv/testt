@@ -14,7 +14,7 @@ export async function POST(request) {
                 const db = client.db('urbandetailing');
                 const collection = db.collection('Queries');
                 await collection.deleteMany({ date: date });
-                return NextResponse.json({ msg: 'Deleted Successfully' });
+                return NextResponse.json({ msg: 'Multiple Deleted Successfully' });
             } else {
                 return NextResponse.json({ msg: 'Request Did not contain id parameter' }, { status: 400 });
             }
